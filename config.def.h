@@ -96,8 +96,8 @@ unsigned int tabspaces = 8;
 
 /* bg opacity */
 float alpha = 0.0;
-/* float alphaOffset = 0.0; */
-/* float alphaUnfocus;
+float alphaOffset = 0.0; 
+float alphaUnfocus;
 
 /* Background opacity */
 float alpha_def;
@@ -124,7 +124,8 @@ static const char *colorname[] = {
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#add8e6", /* 256 -> cursor */
 	"#555555", /* 257 -> rev cursor*/
-	"#282828", /* 258 -> bg */
+	//"#282828", /* 258 -> bg */
+	"#000000", /* 258 -> bg */
 	"#ebdbb2", /* 259 -> fg */
 };
 
@@ -210,7 +211,7 @@ ResourcePref resources[] = {
 		{ "cwscale",      FLOAT,   &cwscale },
 		{ "chscale",      FLOAT,   &chscale },
 		{ "alpha",        FLOAT,   &alpha },
-	/*	{ "alphaOffset",  FLOAT,   &alphaOffset }, */
+		{ "alphaOffset",  FLOAT,   &alphaOffset },
 };
 
 /*
